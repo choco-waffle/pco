@@ -94,11 +94,11 @@
             let question3 = document.getElementById("question3").value;
 
             // EmailJS로 이메일 보내기
-            emailjs.send("service_a2lwyph", "template_gnitzl8", {
-                from_name: name,
-                answer_1: question1,
-                answer_2: question2,
-                answer_3: question3
+            emailjs.send("service_gg7rs8l", "template_gnitzl8", {
+                from_name: name,           // 이름 필드
+                answer_1: question1,       // 첫 번째 질문의 답변
+                answer_2: question2,       // 두 번째 질문의 답변
+                answer_3: question3        // 세 번째 질문의 답변
             })
             .then(function(response) {
                 console.log("이메일 전송 성공", response.status, response.text);
